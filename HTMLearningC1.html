@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>HTML学习：Chapter1</title>
+</head>
+<body>
+<h1>Learning HTML：Chapter 1</h1>
+<h2>Basic elements</h2>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一张图片，通过“img”实现。其中的属性有src（图片地址）和alt（图片的注释）</p>
+<img src="images/bian-mu.jpg" alt="My test image"/>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>无序</strong>列表。通过“ul”unordered list来实现</p>
+<ul>
+    <li>good</li>
+    <li>bad</li>
+    <li>ephoria</li>
+</ul>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>有序</strong>列表。通过“ol”ordered list来实现</p>
+<ol>
+    <li>nicer<h4>标题可以包含在列表里</h4></li>
+    <li>better<h1>多大的标题都行</h1></li>
+    <li>stronger</li>
+</ol>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>超链接</strong>。通过“a”实现</p>
+<p>点击<a href="https://www.bilibili.com/video/BV1GJ411x7h7/">这里</a>前往观看b站色片。</p>
+<p>你可以将超链接放在任何块状元素中</p>
+<a href="https://www.bilibili.com/video/BV1GJ411x7h7/"><p>你也可以将任何块状元素放进</p>
+    <h3>超链接</h3></a>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>描述</strong>列表。通过“dl”discription list实现。</p>
+<p>其中包含有“dt”（discription term）元素，用以指明，还有“dd”（discription defination）元素，用以说明。</p>
+<dl>
+    <dt>这是个dt</dt>
+    <dd>
+        附带说明的dd
+    </dd>
+    <dt>一个dt可以带有多个dd</dt>
+    <dd>
+        像这样
+    </dd>
+    <dd>
+        还有这样
+    </dd>
+    <dt><h3>你可以在dt里塞块状元素。</h3></dt>
+    <dd>
+        你也可以在 <h3>dd</h3> 里塞块状元素。
+    </dd>
+</dl>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>代码</strong>。通过“code”实现。</p>
+<p>同样的，你可以把 <code>code</code> 放在块状元素内，也可以</p>
+<code><h3>用code包裹整个块状元素</h3></code>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>块状引用</strong>。通过“blockquote”实现。</p>
+<blockquote cite="https://www.bilibili.com/video/BV1GJ411x7h7/">
+
+    The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+    <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an
+    extended quotation.
+
+</blockquote>
+<p>----------------------------------------------------------------------</p>
+<p><strong>tips</strong>:可以在文本中使用“& lt;”代替“<”,使用“& rt;”代替“>”</p>
+<p>----------------------------------------------------------------------</p>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>行内引用</strong>。通过“q”quote实现。</p>
+<p>就像这样。 鲁迅曾经说过：<q cite = "https://www.bilibili.com/video/BV1GJ411x7h7/"> 世上本没有路，走的人多了，就会有人过来维护草坪。</q></p>
+<p>周树人说的没错，但是令人遗憾的是，<strong>你不能再行内引用里添加块状元素。</strong>不然怎么会叫行内引用呢。</p>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>引文</strong>。通过“cite”实现。</p>
+<p>这是一个单独的 <cite>cite</cite>。</p>
+<p>这是一个单独的 <a href="https://www.bilibili.com/video/BV1GJ411x7h7/">链接</a>。</p>
+<p>这是用a括起来的 <a href="https://www.bilibili.com/video/BV1GJ411x7h7/"><cite>cite</cite></a>。</p>
+<p>可以看到使用了cite的链接才会出现特有的斜体。</p>
+<p>以下为综合使用例：</p>
+<p>
+    According to the
+    <a href="/zh-CN/docs/Web/HTML/Element/blockquote">
+        <cite>MDN blockquote page</cite></a
+    >:
+</p>
+
+<blockquote
+        cite="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote">
+    <p>
+        The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+        <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+        an extended quotation.
+    </p>
+</blockquote>
+
+<p>
+    The quote element — <code>&lt;q&gt;</code> — is
+    <q cite="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/q"
+    >intended for short quotations that don't require paragraph breaks.</q
+    >
+    — <a href="/zh-CN/docs/Web/HTML/Element/q"> <cite>MDN q page</cite></a
+>.
+</p>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>缩略语</strong>。通过“abbr”实现。</p>
+<p>在生电里，我们常使用 <abbr title="游戏刻：游戏程序运算的基本时间单位长度">gt</abbr> 和 <abbr title="https://www.bilibili.com/read/cv13844679/">tick</abbr> 表示红石的延时或周期。 </p>
+<p>移动到 <abbr title="title的内容会在鼠标悬停时出现">缩略语</abbr> 上，看看里面有什么内容。</p>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是一个<strong>上标和下标</strong>。通过“sup”和“sub”实现。</p>
+<p>
+    咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
+</p>
+<p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是几个<strong>代码元素</strong>。</p>
+<ul>
+    <li>&lt;code>用于标记计算机通用代码。</li>
+    <li>&lt;pre>用于保留空白字符（通常用于代码块）——如果文本中使用了缩进或多余的空白，浏览器将忽略它，你将不会在呈现的页面上看到它。但是，如果你将文本包含在 &lt;pre>&lt;/pre> 标签中，那么空白将会以与你在文本编辑器中看到的相同的方式渲染出来。</li>
+    <li>&lt;var>用于标记具体变量名。</li>
+    <li>&lt;kbd>用于标记输入电脑的键盘（或其他类型）输入。</li>
+    <li>&lt;samp>用于标记计算机程序的输出。</li>
+</ul>
+<p>以下为使用例：</p>
+<pre><code>const para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('噢，噢，噢，别点我了。');
+}</code></pre>
+
+<p>
+    请不要使用 <code>&lt;font&gt;</code> 、
+    <code>&lt;center&gt;</code> 等表象元素。
+</p>
+
+<p>在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。</p>
+
+<p>按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。</p>
+
+<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+<p>
+<h2>#######I'm cutting line#######</h2> 以下是几个<strong>日期与时间</strong>元素。使用“time”和其中的“datetime”属性实现。</p>
+<!-- 标准简单日期 -->
+<time datetime="2016-01-20">20 January 2016</time>
+<!-- 只包含年份和月份-->
+<time datetime="2016-01">January 2016</time>
+<!-- 只包含月份和日期 -->
+<time datetime="01-20">20 January</time>
+<!-- 只包含时间，小时和分钟数 -->
+<time datetime="19:30">19:30</time>
+<!-- 还可包含秒和毫秒 -->
+<time datetime="19:30:01.856">19:30:01.856</time>
+<!-- 日期和时间 -->
+<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+<!-- 含有时区偏移值的日期时间 -->
+<time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+<!-- 提及特定周 -->
+<time datetime="2016-W04">The fourth week of 2016</time>
+<p>可以看出：使用他们之后表面上并没有什么不同。使用他们只是为了更方便计算机提取网页中的时间。</p>
+<p>---------------------------------------------------------</p>
+<p>初步的学习到此为止。</p>
+<p>还想要被更多的知识灌满？杂鱼~点 <a href="HTMLearningC2.html"><cite>这里</cite></a> 嘛~</p>
+</body>
+</html>
