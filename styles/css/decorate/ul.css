@@ -1,0 +1,47 @@
+/* 重置默认的列表样式 */
+.styled-list {
+    list-style: none; /* 移除默认的列表符号 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+    box-shadow: 0 2px 8px rgba(255, 0, 255, 0.5); /* 阴影效果 */
+  }
+  
+  /* 装饰列表项 */
+  .styled-list li {
+    background-color: #505050; /* 背景颜色 */
+    padding: 10px 20px; /* 文字的内边距 */
+    margin-bottom: 5px; /* 列表项之间的外边距 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 5px; /* 圆角边框 */
+    transition: background-color 0.3s, transform 0.3s; /* 过渡效果 */
+  }
+  
+  /* 鼠标悬停时的样式 */
+  .styled-list li:hover {
+    background-color: #000000; /* 鼠标悬停时的背景颜色 */
+    transform: translateY(-2px); /* 轻微上移 */
+  }
+  
+  
+  /* 可以添加一些文本样式 */
+  .styled-list li {
+    font-size: 16px; /* 字体大小 */
+    color: #ffffff; /* 字体颜色 */
+    line-height: 1.5; /* 行高 */
+  }
+  
+  /* 如果需要，可以添加更多的装饰性样式 */
+  .styled-list {
+    counter-reset: list-counter; /* CSS计数器 */
+  }
+  
+  .styled-list li::before {
+    font-weight: bold; /* 列表符号加粗 */
+  }
+  
+  /* 调整列表项的排列方向 */
+  .styled-list {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: flex-start; /* 靠左对齐 */
+  }
